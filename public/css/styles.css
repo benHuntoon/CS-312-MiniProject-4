@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+  margin: 0;
+  background: #f9f9f9;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  min-height: 100vh;
+}
+
+.left, .right {
+  background: #afa489; 
+}
+
+.center{
+  background: #c4bba3; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+h1 {
+  display: flex;
+  text-align: center;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background-color: #e0d8c6;    
+  border: 1px solid #ccc;     
+  border-radius: 10px;         
+  padding: 2rem;                
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  width: 100%;          
+  max-width: 250px;     
+  margin: 10 auto;  
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  background-color: #ccc7b8;      
+  border: 1px solid #afa489;       
+  border-radius: 10px;          
+  padding: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  max-width: 400px;  
+  margin: 5px 0;  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  background-color: #e0d8c6;   
+  border: 1px solid #ccc;      
+  border-radius: 10px;         
+  padding: 1rem;               
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  width: 100%;          
+  max-width: 500px;     
+  margin: 0 auto;  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  width: 300px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 300px;
+  font-size: 1rem;
+  border-radius: 8px;     
+  border: 1px solid #ccc;
+}
+
+.form-row input {
+  width: 145px;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+button {
+  background: #afa489;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+button:hover { background: #c4bba3; }
+
+.post {
+  background-color: white; 
+  word-wrap: break-word;
+  padding: 1rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .left, .right {
+    display: none;
+  }
+
+  .center {
+    padding: 1rem;
+  }
+
+  input, textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+
